@@ -1,1 +1,1 @@
-var angularArt = angular.module('angularArt', []);
+var angularArt = angular.module('angularArt', ['ui.bootstrap']);
