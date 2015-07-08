@@ -12,6 +12,7 @@ angularArt.controller('CanvasCtrl', function CanvasCtrl($scope) {
           rotate: 0 };
 });
 
+
 // .directive('fontDraggable', ['$document', function($document) {
 // 	return function(scope, element, attr) {
 // 		var startX = 3, startY = 181, x = 3, y = 181;
