@@ -1,3 +1,7 @@
-html {
-  background-color: #fff;
+.imagebox {
+	width: 600px;
+	height: 450px;
+	border-style: dotted;
+	border-width: 1px;
+	background-color: #ffffff;
 }
