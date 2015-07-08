@@ -1,9 +1,37 @@
+body {
+	font-family: 'Permanent Marker', cursive;
+}
+
 .imagebox {
 	width: 600px;
 	height: 450px;
 	border-style: dotted;
 	border-width: 1px;
 	background-color: #ffffff;
+}
+
+.stretchAnimation {
+	font-size: 5em;
+	display: block;
+	-webkit-text-stroke: 3px red;
+	-webkit-text-fill-color: #000;
+	-webkit-animation: colorchange 2s infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-margin-before: 1em;
+	-webkit-margin-after: 1em;
+	-webkit-margin-start: 0px;
+	-webkit-margin-end: 0px;
+}
+
+@-webkit-keyframes colorchange {
+	0% {
+		-webkit-text-stroke: 10px #337ab7;
+		letter-spacing: 0;
+	}
+	100% {
+		-webkit-text-stroke: 20px red;
+		letter-spacing: 18px;
+	}
 }
 
 #slider {
