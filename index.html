@@ -32,8 +32,9 @@
                       -moz-filter: sepia({{canvas.sepia}}%);
                       -o-filter: sepia({{canvas.sepia}}%);
                       -ms-filter: sepia({{canvas.sepia}}%);
-                      filter: sepia({{canvas.sepia}}%);">
-            <img image-draggable src="{{imageOne.url}}"
+                      filter: sepia({{canvas.sepia}}%);
+                      background: radial-gradient(circle, {{canvas.radialColor}}, white, black)">
+            <img image-draggable ng-src="{{imageOne.url}}"
                  style="width:{{imageOne.width}}px;
                         top:{{imageOne.positionY}}px;
                         left:{{imageOne.positionX}}px;
@@ -47,7 +48,7 @@
                         -webkit-filter: sepia({{imageOne.sepia}}%)
                                         invert({{imageOne.invert}}%);
                         border-radius: {{imageOne.border}}%;">
-            <img logo-draggable src="{{logo.url}}"
+            <img logo-draggable ng-src="{{logo.url}}"
                  style="width: {{logo.width}}px; top: {{logo.positionY}}px;
                         left: {{logo.positionX}}px;
                         position: relative; cursor: pointer;
@@ -79,6 +80,8 @@
                 <input class="form-control" type="color" ng-model="canvas.color"><br>
                 Background Image URL
                 <input class="form-control" type="text" ng-model="canvas.url"><br>
+                Radial Color Inner
+                <input class="form-control" type="color" ng-model="canvas.radialColor"><br>
                 Sepia
                 <input type="range" min="0" max="100" ng-model="canvas.sepia"><br>
                 Invert
