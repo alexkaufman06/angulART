@@ -19,193 +19,193 @@
     <div class="container">
       <h1 class="text-center stretchAnimation">Angular Art</h1><br><br>
       <div class="row text-center">
-      	<div class="col-md-5 col-lg-5">
-      		<div class="imagebox"
-      			   style="background-color:{{canvas.color}};
+        <div class="col-md-5 col-lg-5">
+          <div class="imagebox"
+               style="background-color:{{canvas.color}};
                       background-image: url('{{canvas.url}}');
-      					      background-size: cover;
+                      background-size: cover;
                       background-repeat: no-repeat;
-      					      -webkit-filter: sepia({{canvas.sepia}}%)
+                      -webkit-filter: sepia({{canvas.sepia}}%)
                                       invert({{canvas.invert}}%)
-      									              saturate({{canvas.saturation}}%)
+                                      saturate({{canvas.saturation}}%)
                                       hue-rotate({{canvas.hue}}deg);
-      					      -moz-filter: sepia({{canvas.sepia}}%);
+                      -moz-filter: sepia({{canvas.sepia}}%);
                       -o-filter: sepia({{canvas.sepia}}%);
-      					      -ms-filter: sepia({{canvas.sepia}}%);
+                      -ms-filter: sepia({{canvas.sepia}}%);
                       filter: sepia({{canvas.sepia}}%);">
-      			<img image-draggable src="{{imageOne.url}}"
-      			     style="width:{{imageOne.width}}px;
+            <img image-draggable src="{{imageOne.url}}"
+                 style="width:{{imageOne.width}}px;
                         top:{{imageOne.positionY}}px;
                         left:{{imageOne.positionX}}px;
-      			            position: relative; cursor: pointer;
-      			            -ms-transform: scale({{imageOne.scaleX}},{{imageOne.scaleY}})
-                                       rotate({{imageOne.rotate}}deg);
-      			            -webkit-transform: scale({{imageOne.scaleX}},{{imageOne.scaleY}})
-                                           rotate({{imageOne.rotate}}deg);
-      			            transform: scale({{imageOne.scaleX}},{{imageOne.scaleY}})
-                                   rotate({{imageOne.rotate}}deg);
-      			            -webkit-filter: sepia({{imageOne.sepia}}%)
-                                        invert({{imageOne.invert}}%);
-      			            border-radius: {{imageOne.border}}%;">
-      			<img logo-draggable src="{{logo.url}}"
-        				 style="width: {{logo.width}}px; top: {{logo.positionY}}px;
-        					      left: {{logo.positionX}}px;
                         position: relative; cursor: pointer;
-        					      -ms-transform: scale({{logo.scaleX}},{{logo.scaleY}})
+                        -ms-transform: scale({{imageOne.scaleX}},{{imageOne.scaleY}})
+                                       rotate({{imageOne.rotate}}deg);
+                        -webkit-transform: scale({{imageOne.scaleX}},{{imageOne.scaleY}})
+                                           rotate({{imageOne.rotate}}deg);
+                        transform: scale({{imageOne.scaleX}},{{imageOne.scaleY}})
+                                   rotate({{imageOne.rotate}}deg);
+                        -webkit-filter: sepia({{imageOne.sepia}}%)
+                                        invert({{imageOne.invert}}%);
+                        border-radius: {{imageOne.border}}%;">
+            <img logo-draggable src="{{logo.url}}"
+                 style="width: {{logo.width}}px; top: {{logo.positionY}}px;
+                        left: {{logo.positionX}}px;
+                        position: relative; cursor: pointer;
+                        -ms-transform: scale({{logo.scaleX}},{{logo.scaleY}})
                                        rotate({{logo.rotate}}deg);
-        					      -webkit-transform: scale({{logo.scaleX}},{{logo.scaleY}})
+                        -webkit-transform: scale({{logo.scaleX}},{{logo.scaleY}})
                                            rotate({{logo.rotate}}deg);
-        					      transform: scale({{logo.scaleX}},{{logo.scaleY}})
+                        transform: scale({{logo.scaleX}},{{logo.scaleY}})
                                    rotate({{logo.rotate}}deg);
-        					      border-radius: {{logo.border}}%;">
-      			<h1 font-draggable
+                        border-radius: {{logo.border}}%;">
+            <h1 font-draggable
                 style="font-size:{{font.size}}px; color: {{font.color}};
                        top:{{font.positionY}}px; 	left:{{font.positionX}}px;
                        font-family: {{font.type}}; position: relative; cursor: pointer;
-  									   -webkit-text-stroke: {{font.strokeSize}}px {{font.strokeColor}};
-  									   -webkit-text-fill-color: {{font.color}};
-  									   -ms-transform: rotate({{font.rotate}}deg);
-  									   -webkit-transform: rotate({{font.rotate}}deg);
-  									   transform: rotate({{font.rotate}}deg);">{{font.text}}
-      			</h1>
-      		</div>
-      	</div>
+                       -webkit-text-stroke: {{font.strokeSize}}px {{font.strokeColor}};
+                       -webkit-text-fill-color: {{font.color}};
+                       -ms-transform: rotate({{font.rotate}}deg);
+                       -webkit-transform: rotate({{font.rotate}}deg);
+                       transform: rotate({{font.rotate}}deg);">{{font.text}}
+            </h1>
+          </div>
+        </div>
         <div class="col-md-2 col-lg-2"></div>
-      	<div class="col-md-5 col-lg-5">
-        	<tabset justified="true">
-        		<tab heading="Master">
-        			<div class="controls">
-        				Background Color:
+        <div class="col-md-5 col-lg-5">
+          <tabset justified="true">
+            <tab heading="Master">
+              <div class="controls">
+                Background Color:
                 <input class="form-control" type="color" ng-model="canvas.color"><br>
-        				Background Image URL
+                Background Image URL
                 <input class="form-control" type="text" ng-model="canvas.url"><br>
-        				Sepia
+                Sepia
                 <input type="range" min="0" max="100" ng-model="canvas.sepia"><br>
-        				Invert
+                Invert
                 <input type="range" min="0" max="100" ng-model="canvas.invert"><br>
-        				Saturation
+                Saturation
                 <input type="range" min="0" max="3000" ng-model="canvas.saturation"><br>
-        				Hue
+                Hue
                 <input type="range" min="0" max="360" ng-model="canvas.hue">
-        			</div>
-        		</tab>
-        		<tab heading="Logo">
-        			<div class="controls">
-        				Image URL
+              </div>
+            </tab>
+            <tab heading="Logo">
+              <div class="controls">
+                Image URL
                 <input class="form-control" type="text" ng-model="logo.url"><br>
-        				Size
+                Size
                 <input type="range" min="1" max="1000" ng-model="logo.width"><br>
-        				Width
+                Width
                 <input type="range" min="0.01" max="7" step="0.01" ng-model="logo.scaleX"><br>
-        				Height
+                Height
                 <input type="range" min="0.01" max="7" step="0.01" ng-model="logo.scaleY"><br>
-        				Horizontal Position
+                Horizontal Position
                 <input type="range" min="-300" max="500" ng-model="logo.positionX"><br>
-        				Vertical Position
+                Vertical Position
                 <input type="range" min="-800" max="300" ng-model="logo.positionY"><br>
-        				Rotate
+                Rotate
                 <input type="range" min="0" max="360" ng-model="logo.rotate"><br>
-        				Border Radius
+                Border Radius
                 <input type="range" min="0" max="100" ng-model="logo.border">
-        			</div>
-        		</tab>
-        		<tab heading="Image">
-        			<div class="controls">
-        				<div class="row">
-        					<div class="col-md-12 col-lg-12">
-        						Image Layer 1 URL
+              </div>
+            </tab>
+            <tab heading="Image">
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-12 col-lg-12">
+                    Image Layer 1 URL
                     <input class="form-control" type="text" ng-model="imageOne.url">
-        					</div>
-        				</div>
-        				Size
-        				<div id="slider">
-        					<input class="bar" type="range" min="1" max="1000"
+                  </div>
+                </div>
+                Size
+                <div id="slider">
+                  <input class="bar" type="range" min="1" max="1000"
                          ng-model="imageOne.width" onchange="rangevalue.value=value">
-        					<span class="highlight"></span>
-        					<output id="rangevalue">50</output>
-        				</div>
-        				<br>
-        				Width
+                  <span class="highlight"></span>
+                  <output id="rangevalue">50</output>
+                </div>
+                <br>
+                Width
                 <input type="range" min="0.01" max="7" step="0.01"
                        ng-model="imageOne.scaleX"><br>
-        				Height
+                Height
                 <input type="range" min="0.01" max="7" step="0.01"
                        ng-model="imageOne.scaleY"><br>
-        				Horizontal Position
+                Horizontal Position
                 <input type="range" min="-300" max="500"
                        ng-model="imageOne.positionX"><br>
-        				Vertical Position
+                Vertical Position
                 <input type="range" min="-500" max="500"
                        ng-model="imageOne.positionY"><br>
-        				Image Rotate
+                Image Rotate
                 <input type="range" min="0" max="360"
                        ng-model="imageOne.rotate"><br>
-        				Image Sepia
+                Image Sepia
                 <input type="range" min="0" max="100"
                        ng-model="imageOne.sepia"><br>
-        				Image Invert
+                Image Invert
                 <input type="range" min="0" max="100"
                        ng-model="imageOne.invert"><br>
-        				Border Radius
+                Border Radius
                 <input type="range" min="0" max="100" ng-model="imageOne.border">
-        			</div>
-        		</tab>
-        		<tab heading="Font">
-        			<div class="controls">
-        				<div class="row">
-        					<div class="col-md-6 col-lg-6">
-        						Phone number <input class="form-control" type="text" ng-model="font.text">
-        					</div>
-        					<div class="col-md-6 col-lg-6">Font Type
-        						<select class="form-control" ng-model="font.type">
-        							<option value="Arial, Helvetica, sans-serif">
+              </div>
+            </tab>
+            <tab heading="Font">
+              <div class="controls">
+                <div class="row">
+                  <div class="col-md-6 col-lg-6">
+                    Phone number <input class="form-control" type="text" ng-model="font.text">
+                  </div>
+                  <div class="col-md-6 col-lg-6">Font Type
+                    <select class="form-control" ng-model="font.type">
+                      <option value="Arial, Helvetica, sans-serif">
                         Arial
                       </option>
-        							<option value="'Arial Black', Gadget, sans-serif">
+                      <option value="'Arial Black', Gadget, sans-serif">
                         Arial Black
                       </option>
-        							<option value="'Comic Sans MS', cursive, sans-serif">
+                      <option value="'Comic Sans MS', cursive, sans-serif">
                         Comic Sans MS
                       </option>
-        							<option value="Impact, Charcoal, sans-serif">
+                      <option value="Impact, Charcoal, sans-serif">
                         Impact
                       </option>
-        							<option value="Tahoma, Geneva, sans-serif">
+                      <option value="Tahoma, Geneva, sans-serif">
                         Tahoma
                       </option>
-        						</select>
-        					</div>
-        				</div>
-        				<div class="row">
-        					<div class="col-md-6 col-lg-6">
-        						Font Color
+                    </select>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-6 col-lg-6">
+                    Font Color
                     <input class="form-control" type="color" ng-model="font.color">
-        					</div>
-        					<div class="col-md-6 col-lg-6">
-        						Stroke Color
+                  </div>
+                  <div class="col-md-6 col-lg-6">
+                    Stroke Color
                     <input class="form-control" type="color"
                            ng-model="font.strokeColor"><br>
-        					</div>
-        				</div>
-        				Font Size
+                  </div>
+                </div>
+                Font Size
                 <input type="range" min="1" max="300"
                        ng-model="font.size"><br>
-        				Stroke Size
+                Stroke Size
                 <input type="range" min="0" max="10"
                        ng-model="font.strokeSize"><br>
-        				Font Horizontal Position
+                Font Horizontal Position
                 <input type="range" min="-300" max="500"
                        ng-model="font.positionX"><br>
-        				Font Vertical Position
+                Font Vertical Position
                 <input type="range" min="-800" max="300"
                        ng-model="font.positionY"><br>
-        				Font Rotate
+                Font Rotate
                 <input type="range" min="0" max="360"
                        ng-model="font.rotate"><br>
-        			</div>
-        		</tab>
-        	</tabset>
-      	</div>
+              </div>
+            </tab>
+          </tabset>
+        </div>
       </div>
     </div>
   </body>
