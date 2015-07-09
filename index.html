@@ -11,7 +11,9 @@
   <script src="js/lib/ui-bootstrap.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers/canvas.js"></script>
-  <script src="js/directives/draggable.js"></script>
+  <script src="js/directives/fontDraggable.js"></script>
+  <script src="js/directives/imageDraggable.js"></script>
+  <script src="js/directives/logoDraggable.js"></script>
 </head>
   <body ng-controller="CanvasCtrl">
     <div class="container">
@@ -25,7 +27,7 @@
       									saturate({{canvas.saturation}}%) hue-rotate({{canvas.hue}}deg);
       					-moz-filter: sepia({{canvas.sepia}}%); -o-filter: sepia({{canvas.sepia}}%);
       					-ms-filter: sepia({{canvas.sepia}}%); filter: sepia({{canvas.sepia}}%);">
-      			<img my-draggable src="{{imageOne.url}}"
+      			<img image-draggable src="{{imageOne.url}}"
       			  style="width:{{imageOne.width}}px; top:{{imageOne.positionY}}px; left:{{imageOne.positionX}}px;
       			  position: relative; cursor: pointer;
       			  -ms-transform: scale({{imageOne.scaleX}},{{imageOne.scaleY}}) rotate({{imageOne.rotate}}deg);
