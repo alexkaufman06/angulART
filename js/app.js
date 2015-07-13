@@ -1,1 +1,1 @@
-var angularArt = angular.module('angularArt', ['ui.bootstrap', 'ngRoute', 'ngAnimate', 'mgcrea.ngStrap']);
+var angularArt = angular.module('angularArt', ['ui.bootstrap', 'ngAnimate', 'ngSanitize', 'mgcrea.ngStrap']);
