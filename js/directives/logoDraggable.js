@@ -1,6 +1,6 @@
 angularArt.directive('logoDraggable', ['$document', function($document) {
   return function(scope, element, attr) {
-    var startX = 3, startY = 181, x = 3, y = 181;
+    var startX = -253, startY = -40, x = -253, y = -40;
 
     element.css({
       position: 'relative',
