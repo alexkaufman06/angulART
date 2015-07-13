@@ -43,6 +43,8 @@
                       filter: sepia({{canvas.sepia}}%);
                       background: radial-gradient(circle, {{canvas.radialColor}}, white, black)">
             <img image-draggable ng-src="{{imageOne.url}}"
+                 bs-tooltip data-animation="am-flip-x"
+                 data-title="This image is draggable"
                  style="width:{{imageOne.width}}px;
                         top:{{imageOne.positionY}}px;
                         left:{{imageOne.positionX}}px;
@@ -57,6 +59,8 @@
                                         invert({{imageOne.invert}}%);
                         border-radius: {{imageOne.border}}%;">
             <img logo-draggable ng-src="{{logo.url}}"
+                 bs-tooltip data-animation="am-flip-x"
+                 data-title="This image is draggable"
                  style="width: {{logo.width}}px; top: {{logo.positionY}}px;
                         left: {{logo.positionX}}px;
                         position: relative; cursor: pointer;
@@ -68,6 +72,8 @@
                                    rotate({{logo.rotate}}deg);
                         border-radius: {{logo.border}}%;">
             <h1 font-draggable
+                bs-tooltip data-animation="am-flip-x"
+                data-title="This text is draggable"
                 style="font-size:{{font.size}}px; color: {{font.color}};
                        top:{{font.positionY}}px; 	left:{{font.positionX}}px;
                        font-family: {{font.type}}; position: relative; cursor: pointer;
@@ -91,19 +97,36 @@
                 Radial Color Inner
                 <input class="form-control" type="color" ng-model="canvas.radialColor"><br>
                 Sepia
-                  <sup bs-tooltip data-animation="am-flip-x"
-                       data-title="Click for more information">
-                    <span class="glyphicon glyphicon-info-sign"
-                          data-template="partials/sepia-aside.html"
-                          bs-aside="aside">
-                    </span>
-                  </sup>
+                <sup>
+                  <span class="glyphicon glyphicon-info-sign"
+                        data-template="partials/sepia-aside.html"
+                        bs-aside>
+                  </span>
+                </sup>
                 <input type="range" min="0" max="100" ng-model="canvas.sepia"><br>
                 Invert
+                <sup>
+                  <span class="glyphicon glyphicon-info-sign"
+                        data-template="partials/invert-aside.html"
+                        bs-aside>
+                  </span>
+                </sup>
                 <input type="range" min="0" max="100" ng-model="canvas.invert"><br>
                 Saturation
+                <sup>
+                  <span class="glyphicon glyphicon-info-sign"
+                        data-template="partials/saturation-aside.html"
+                        bs-aside>
+                  </span>
+                </sup>
                 <input type="range" min="0" max="3000" ng-model="canvas.saturation"><br>
                 Hue
+                <sup>
+                  <span class="glyphicon glyphicon-info-sign"
+                        data-template="partials/hue-aside.html"
+                        bs-aside>
+                  </span>
+                </sup>
                 <input type="range" min="0" max="360" ng-model="canvas.hue">
               </div>
             </tab>

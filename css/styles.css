@@ -2,6 +2,10 @@ body {
 	font-family: 'Permanent Marker', cursive;
 }
 
+.aside-body {
+	width: 320px;
+}
+
 .glyphicon {
 	font-size: 1.5em;
 }
