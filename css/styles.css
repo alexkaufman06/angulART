@@ -2,6 +2,15 @@ body {
 	font-family: 'Permanent Marker', cursive;
 }
 
+.glyphicon {
+	font-size: 1.5em;
+}
+
+.glyphicon:hover {
+	color: #337ab7;
+	cursor: pointer;
+}
+
 .imagebox {
 	width: 600px;
 	height: 450px;
