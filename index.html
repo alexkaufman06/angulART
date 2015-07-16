@@ -103,7 +103,12 @@
                         bs-aside>
                   </span>
                 </sup>
-                <input type="range" min="0" max="100" ng-model="canvas.sepia"><br>
+                <div id="slider">
+                  <input type="range" class="bar" min="0" max="100"
+                         ng-model="canvas.sepia" onchange="rangevalue.value=value">
+                  <span class="highlight"></span>
+                  <output id="rangevalue">{{canvas.sepia}}</output>
+                </div>
                 Invert
                 <sup>
                   <span class="glyphicon glyphicon-info-sign"
@@ -111,7 +116,12 @@
                         bs-aside>
                   </span>
                 </sup>
-                <input type="range" min="0" max="100" ng-model="canvas.invert"><br>
+                <div id="slider">
+                  <input type="range" min="0" max="100" class="bar"
+                         ng-model="canvas.invert" onchange="rangevalue.value=value">
+                  <span class="highlight"></span>
+                  <output id="rangevalue">{{canvas.invert}}</output>
+                </div>
                 Saturation
                 <sup>
                   <span class="glyphicon glyphicon-info-sign"
@@ -119,7 +129,12 @@
                         bs-aside>
                   </span>
                 </sup>
-                <input type="range" min="0" max="3000" ng-model="canvas.saturation"><br>
+                <div id="slider">
+                  <input type="range" min="0" max="3000" class="bar"
+                         ng-model="canvas.saturation" onchange="rangevalue.value=value">
+                  <span class="highlight"></span>
+                  <output id="rangevalue">{{canvas.saturation}}</output>
+                </div>
                 Hue
                 <sup>
                   <span class="glyphicon glyphicon-info-sign"
@@ -127,7 +142,12 @@
                         bs-aside>
                   </span>
                 </sup>
-                <input type="range" min="0" max="360" ng-model="canvas.hue">
+                <div id="slider">
+                  <input type="range" min="0" max="360" ng-model="canvas.hue"
+                         onchange="rangevalue.value=value" class="bar">
+                  <span class="highlight"></span>
+                  <output id="rangevalue">{{canvas.hue}}</output>
+                </div>
               </div>
             </tab>
             <tab heading="Logo">
@@ -163,7 +183,7 @@
                   <input class="bar" type="range" min="1" max="1000"
                          ng-model="imageOne.width" onchange="rangevalue.value=value">
                   <span class="highlight"></span>
-                  <output id="rangevalue">50</output>
+                  <output id="rangevalue">{{imageOne.width}}</output>
                 </div>
                 <br>
                 Width
