@@ -185,30 +185,62 @@
                   <span class="highlight"></span>
                   <output id="rangevalue">{{imageOne.width}}</output>
                 </div>
-                <br>
                 Width
-                <input type="range" min="0.01" max="7" step="0.01"
-                       ng-model="imageOne.scaleX"><br>
+                <div id="slider">
+                  <input type="range" class="bar" min="0.01" max="7" step="0.01"
+                         ng-model="imageOne.scaleX" onchange="rangevalue.value=value">
+                  <span class="highlight"></span>
+                  <output id="rangevalue">{{imageOne.scaleX}}</output>
+                </div>
                 Height
-                <input type="range" min="0.01" max="7" step="0.01"
-                       ng-model="imageOne.scaleY"><br>
+                <div id="slider">
+                  <input type="range" class="bar" min="0.01" max="7" step="0.01"
+                         ng-model="imageOne.scaleY" onchange="rangevalue.value=value">
+                  <span class="highlight"></span>
+                  <output id="rangevalue">{{imageOne.scaleY}}</output>
+                </div>
                 Horizontal Position
-                <input type="range" min="-300" max="500"
-                       ng-model="imageOne.positionX"><br>
+                <div id="slider">
+                  <input type="range" class="bar" min="-300" max="500"
+                         ng-model="imageOne.positionX" onchange="rangevalue.value=value">
+                  <span class="highlight"></span>
+                  <output id="rangevalue">{{imageOne.positionX}}</output>
+                </div>
                 Vertical Position
-                <input type="range" min="-500" max="500"
-                       ng-model="imageOne.positionY"><br>
+                <div id="slider">
+                  <input type="range" class="bar" min="-500" max="500"
+                         ng-model="imageOne.positionY" onchange="rangevalue.value=value">
+                  <span class="highlight"></span>
+                  <output id="rangevalue">{{imageOne.positionY}}</output>
+                </div>
                 Image Rotate
-                <input type="range" min="0" max="360"
-                       ng-model="imageOne.rotate"><br>
+                <div id="slider">
+                  <input type="range" class="bar" min="0" max="360"
+                         ng-model="imageOne.rotate" onchange="rangevalue.value=value">
+                  <span class="highlight"></span>
+                  <output id="rangevalue">{{imageOne.rotate}}</output>
+                </div>
                 Image Sepia
-                <input type="range" min="0" max="100"
-                       ng-model="imageOne.sepia"><br>
+                <div id="slider">
+                  <input type="range" class="bar" min="0" max="100"
+                         ng-model="imageOne.sepia" onchange="rangevalue.value=value">
+                  <span class="highlight"></span>
+                  <output id="rangevalue">{{imageOne.sepia}}</output>
+                </div>
                 Image Invert
-                <input type="range" min="0" max="100"
-                       ng-model="imageOne.invert"><br>
+                <div id="slider">
+                  <input type="range" class="bar" min="0" max="100"
+                         ng-model="imageOne.invert" onchange="rangevalue.value=value">
+                  <span class="highlight"></span>
+                  <output id="rangevalue">{{imageOne.invert}}</output>
+                </div>
                 Border Radius
-                <input type="range" min="0" max="100" ng-model="imageOne.border">
+                <div id="slider">
+                  <input type="range" class="bar" min="0" max="100"
+                         ng-model="imageOne.border" onchange="rangevalue.value=value">
+                  <span class="highlight"></span>
+                  <output id="rangevalue">{{imageOne.border}}</output>
+                </div>
               </div>
             </tab>
             <tab heading="Font">
