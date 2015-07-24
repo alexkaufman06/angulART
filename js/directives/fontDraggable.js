@@ -1,6 +1,6 @@
 angularArt.directive('fontDraggable', ['$document', function($document) {
   return function(scope, element, attr) {
-    var startX = -103, startY = 164, x = -103, y = 164;
+    var startX = 8, startY = 129, x = 8, y = 129;
 
     element.css({
       position: 'relative',

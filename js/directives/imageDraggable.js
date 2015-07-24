@@ -1,6 +1,6 @@
 angularArt.directive('imageDraggable', ['$document', function($document) {
   return function(scope, element, attr) {
-    var startX = 211, startY = 189, x = 211, y = 189;
+    var startX = 253, startY = 198, x = 253, y = 198;
 
     element.css({
       position: 'relative',
